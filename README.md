@@ -129,7 +129,7 @@ f432ad07989b   19 minutes ago   ENTRYPOINT ["apachectl" "-D" "FOREGROUND"]      
 <missing>      8 weeks ago      /bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH     0B        
 <missing>      8 weeks ago      /bin/sh -c #(nop)  ARG RELEASE                  0B 
 ```
-apache_init - waga: ok. 514 MV, ilość warstw: 16
+apache_init - waga: ok. 514 MB, ilość warstw: 16
 ```bash
 $ docker history apache-server:latest 
 IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
