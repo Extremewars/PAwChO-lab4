@@ -169,4 +169,6 @@ b9d6271cebd7   12 minutes ago   USER www-data                                   
 
 # Wnioski
 
-Gotowe szablony (z polecenia docker init) zabierają o wiele więcej pamięci niż własnoręcznie zbudowane obrazy. Dla uruchomienia prostej strony html nie potrzebowaliśmy tak rozbudowanego obrazu jaki oferuje nam szablon "PHP with Apache". W przypadku własnoręcznie zbudowanych obrazów dobre praktyki pozwoliły nam zaoszczędzić 50 MB poprzez nie instalację dodatkowych pakietów.
+- Gotowe szablony (z polecenia docker init) zabierają o wiele więcej pamięci niż własnoręcznie zbudowane obrazy.
+- Dla uruchomienia prostej strony html nie potrzebowaliśmy tak rozbudowanego obrazu jaki oferuje nam szablon "PHP with Apache".
+- W przypadku własnoręcznie zbudowanych obrazów dobre praktyki pozwoliły nam zaoszczędzić 50 MB poprzez nie instalację dodatkowych pakietów.
