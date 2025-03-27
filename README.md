@@ -18,10 +18,10 @@ docker compose up
 
 Pozostałe obrazy oraz kontenery stworzone zostały za pomocą poleceń:
 ```bash
-$ docker build -t web100 .
+docker build -t web100 .
 ```
 ```bash
-$ docker run -d -p 8080:80 --name web100_container web100
+docker run -d -p 8080:80 --name web100_container web100
 ```
 
 # Dockerfile obrazu "gorszego" (w repozytorium web100/Dockerfile)
@@ -72,7 +72,7 @@ ENTRYPOINT ["apachectl", "-D", "FOREGROUND"]
 
 Można użyć przeglądarki wpisując link http://localhost:8080/ albo polecenia curl:
 ```bash
-$ curl http://localhost:8080/
+curl http://localhost:8080/
 ```
 Powyższe polecenie przy poprawnej konfiguracji zwróci:
 ```html
@@ -93,7 +93,7 @@ Powyższe polecenie przy poprawnej konfiguracji zwróci:
 
 Ilość warstw można zobaczyć między innymi za pomocą polecenia
 ```bash
-$ docker history <nazwa_obrazu>
+docker history <nazwa_obrazu>
 ```
 W przypadku naszych obrazów terminal zwróci następujące rezultaty (web100 - obraz z brakiem dobrych praktyk, web101 - obraz z dobrymi praktykami, apache_init - szablonowy obraz z docker init):\
 web100 - waga: ok. 270 MB, ilość warstw: 11
